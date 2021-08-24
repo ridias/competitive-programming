@@ -1,4 +1,3 @@
-# competitive-programming
-Problems solved from different platforms
+# Binarysearch
 
 https://binarysearch.com/@/glandius

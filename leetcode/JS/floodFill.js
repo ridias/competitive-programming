@@ -8,89 +8,31 @@
  * @return {number[][]}
  */
  var floodFill = function(image, sr, sc, newColor) {
-    
+    let visited = new Set()
     let queue = [[sr, sc]]
-    let startColor = image[sr][sc]
-    let map = {}
-    image[sr][sc] = newColor
+    let bounds = [[0, 1], [0, -1], [1, 0], [-1, 0]]
+    let colorToChange = image[sr][sc]
+    
     
     while(queue.length > 0){
-        let positions = queue.shift()
-        let i = positions[0]
-        let j = positions[1]
+        let pos = queue.shift()
+        let i = pos[0]
+        let j = pos[1]
         
-        if(map[i+","+j] == undefined){
-            map[i+","+j] = 1
-        }else{
-            continue
-        }
+        image[i][j] = newColor
+        visited.add(i + ";" + j)
         
-        let left = false
-        let right = false
-        let top = false
-        let bottom = false
-        
-        if(i - 1 >= 0){
-            if(image[i-1][j] == startColor){
-                image[i-1][j] = newColor
-                queue.push([i-1, j])
-                top = true
-            }
-        }
-        
-        if(i + 1 < image.length){
-            if(image[i+1][j] == startColor){
-                image[i+1][j] = newColor
-                queue.push([i+1, j])
-                bottom = true
-            }
-        }
-        
-        if(j - 1 >= 0){
-            if(image[i][j-1] == startColor){
-                image[i][j-1] = newColor
-                queue.push([i, j-1])
-                left = true
-            }
-        }
-        
-        if(j + 1 < image[i].length){
-            if(image[i][j+1] == startColor){
-                image[i][j+1] = newColor
-                queue.push([i, j+1])
-                right = true
-            }
-        }
-        
-        if(j - 1 >= 0 && i - 1 >= 0 && (top || left)){
-            if(image[i-1][j-1] == startColor){
-                image[i-1][j-1] = newColor
-                queue.push([i-1, j-1])
-            }
-        }
-                
-        if(j + 1 < image[0].length && i - 1 >= 0 && (right || top)){
-            if(image[i-1][j+1] == startColor){
-                image[i-1][j+1] = newColor
-                queue.push([i-1, j+1])
-            }
-        }
-        
-        if(j - 1 >= 0 && i + 1 < image.length && (bottom || left)){
-            if(image[i+1][j-1] == startColor){
-                image[i+1][j-1] = newColor
-                queue.push([i+1, j-1])
-            }
-        }
-    
-        if(j + 1 < image[0].length && i + 1 < image.length && (bottom || right)){
-            if(image[i+1][j+1] == startColor){
-                image[i+1][j+1] = newColor
-                queue.push([i+1, j+1])
+        for(let k = 0; k < bounds.length; k++){
+            let x = bounds[k][0] + i
+            let y = bounds[k][1] + j
+            
+            if(x < image.length && x >= 0 && y < image[i].length && y >= 0 && !visited.has(x + ";" + y)){
+                if(image[x][y] == colorToChange){
+                    queue.push([x, y])
+                }
             }
         }
     }
     
     return image
-    
 };

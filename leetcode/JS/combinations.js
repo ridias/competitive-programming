@@ -28,3 +28,32 @@
      }
      
  }
+
+
+ /**
+ * @param {number} n
+ * @param {number} k
+ * @return {number[][]}
+ */
+var combine = function(n, k) {
+    
+    let result = []
+    recursion(1,n, k, [], result)
+    return result
+};
+
+var recursion = function(currentNumber, n, k, nums, result){
+    if(nums.length > k){
+        return;
+    }
+    
+    if(nums.length == k){
+        result.push([...nums])
+    }
+    
+    for(let i = currentNumber; i <= n; i++){
+        nums.push(i)
+        recursion(i + 1, n, k, nums, result)
+        nums.pop()
+    }
+}

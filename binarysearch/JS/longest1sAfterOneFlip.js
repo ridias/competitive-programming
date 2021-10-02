@@ -29,6 +29,5 @@ class Solution {
 
         if(len > max) max = len
         return max
-        
     }
 }

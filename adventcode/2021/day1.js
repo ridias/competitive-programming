@@ -12,7 +12,6 @@ try {
         }
     }
 
-    console.log("First part: " + count)
     count = 0
     let previous = data[0] * 1 + data[1] * 1 + data[2] * 1
     for(let i = 1; i < data.length - 2; i++){

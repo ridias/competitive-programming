@@ -1,0 +1,1 @@
+SELECT avg(purch_amt) as sum from orders;

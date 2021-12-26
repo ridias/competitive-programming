@@ -1,0 +1,1 @@
+SELECT * FROM orders WHERE purch_amt between 400 and 500 and purch_amt <> 948.50 and purch_amt <> 1983.43;

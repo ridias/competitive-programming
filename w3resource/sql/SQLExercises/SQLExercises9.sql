@@ -1,0 +1,1 @@
+SELECT salesman_id FROM salesman WHERE city = 'Paris';

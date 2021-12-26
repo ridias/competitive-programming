@@ -1,0 +1,1 @@
+SELECT winner from nobel_win WHERE subject = 'Literature' and year = 1971;

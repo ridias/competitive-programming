@@ -1,0 +1,1 @@
+SELECT 'For' as for, ord_date, ',there are' as thereare, count(*), 'orders.' from orders group by ord_date;

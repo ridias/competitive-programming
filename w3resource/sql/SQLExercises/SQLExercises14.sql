@@ -1,0 +1,1 @@
+SELECT year, subject FROM nobel_win WHERE winner = 'Dennis Gabor';

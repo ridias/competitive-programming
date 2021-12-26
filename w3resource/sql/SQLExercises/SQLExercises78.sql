@@ -1,0 +1,1 @@
+SELECT customer_id, ord_date, max(purch_amt) from orders WHERE purch_amt BETWEEN 2000 and 6000 Group by customer_id, ord_date;

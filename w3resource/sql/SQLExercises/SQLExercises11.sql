@@ -1,0 +1,1 @@
+SELECT ord_no, ord_date, purch_amt FROM orders WHERE salesman_id = 5001;

@@ -1,0 +1,1 @@
+SELECT * FROM emp_details WHERE emp_lname = 'Dosni' or emp_lname = 'Mardy';

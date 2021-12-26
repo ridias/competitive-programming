@@ -1,0 +1,1 @@
+SELECT year, subject, winner, country, category from nobel_win WHERE winner like 'Louis %';

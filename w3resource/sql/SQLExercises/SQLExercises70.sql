@@ -1,0 +1,1 @@
+SELECT COUNT(*) from customer WHERE grade is not null;

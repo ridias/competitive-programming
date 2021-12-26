@@ -1,0 +1,1 @@
+SELECT salesman_id, name, city, '%' as percentage, commission * 100 from salesman;

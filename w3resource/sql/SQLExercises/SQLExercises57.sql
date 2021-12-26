@@ -1,0 +1,1 @@
+SELECT * FROM testtable where col1 like '%/_%' ESCAPE '/';

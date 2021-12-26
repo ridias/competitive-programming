@@ -1,0 +1,1 @@
+SELECT * FROM customer WHERE city = 'New York' and grade > 100;

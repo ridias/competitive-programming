@@ -1,0 +1,1 @@
+SELECT COUNT(Distinct salesman_id) from orders;

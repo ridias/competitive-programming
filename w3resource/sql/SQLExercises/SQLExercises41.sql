@@ -1,0 +1,1 @@
+SELECT * FROM orders WHERE (purch_amt < 200) or (ord_date >= '2012-02-10' and customer_id < 3009);

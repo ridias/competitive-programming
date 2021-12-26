@@ -1,0 +1,1 @@
+SELECT count(*) from item_mast WHERE pro_price >= 350;

@@ -1,0 +1,1 @@
+SELECT * FROM salesman where city = 'Paris' or city = 'Rome';

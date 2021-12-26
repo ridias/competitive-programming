@@ -1,0 +1,1 @@
+SELECT c.cust_name, s.name, s.city from salesman as s, customer as c where s.city = c.city;

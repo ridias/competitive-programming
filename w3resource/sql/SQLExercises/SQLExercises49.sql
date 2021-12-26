@@ -1,0 +1,1 @@
+SELECT * FROM customer WHERE customer_id in (3007, 3008, 3009);

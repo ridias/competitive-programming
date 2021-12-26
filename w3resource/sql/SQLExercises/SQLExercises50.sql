@@ -1,0 +1,1 @@
+SELECT * FROM salesman WHERE commission between 0.12 and 0.14;

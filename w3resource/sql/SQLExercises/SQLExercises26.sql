@@ -1,0 +1,1 @@
+SELECT AVG(pro_price) from item_mast WHERE pro_com = 16;

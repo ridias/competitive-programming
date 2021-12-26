@@ -1,0 +1,1 @@
+SELECT year, subject, winner, country FROM nobel_win WHERE subject = 'Chemistry' and year between 1965 and 1975; 

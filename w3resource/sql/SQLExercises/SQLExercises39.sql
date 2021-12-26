@@ -1,0 +1,1 @@
+Select * FROM orders WHERE (ord_date <> '2012-09-10' and salesman_id > 5005) or purch_amt > 1000;

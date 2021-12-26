@@ -1,0 +1,1 @@
+SELECT sum(dpt_allotment) from emp_department;

@@ -1,0 +1,1 @@
+SELECT cust_name, city, grade FROM customer order by grade desc;

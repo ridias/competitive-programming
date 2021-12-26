@@ -1,0 +1,1 @@
+SELECT salesman_id, max(purch_amt) from orders WHERE salesman_id between 5003 and 5008 group by salesman_id;

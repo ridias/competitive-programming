@@ -1,0 +1,1 @@
+SELECT * FROM customer WHERE grade is null;

@@ -1,0 +1,1 @@
+SELECT count(*) from orders WHERE ord_date = '2012-08-17';

@@ -1,0 +1,1 @@
+select 1 as first, 2 as second, 3 as third;

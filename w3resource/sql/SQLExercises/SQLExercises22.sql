@@ -1,0 +1,1 @@
+SELECT year, subject, winner, country, category FROM nobel_win WHERE winner = 'Johannes Georg Bednorz';

@@ -1,0 +1,1 @@
+SELECT year, subject, winner, country, category From nobel_win WHERE (year < 1971 and subject = 'Physiology') or (subject = 'Peace' and year > 1974); 

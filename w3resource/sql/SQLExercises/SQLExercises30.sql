@@ -1,0 +1,1 @@
+SELECT pro_name, pro_price FROM item_mast WHERE pro_price = (Select MIN(pro_price) from item_mast);

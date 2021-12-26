@@ -1,0 +1,1 @@
+SELECT customer_id, count(*) as coun, max(purch_amt) from orders GROUP by customer_id order by coun desc;

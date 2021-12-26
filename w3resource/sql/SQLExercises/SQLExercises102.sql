@@ -1,0 +1,1 @@
+SELECT c.cust_name, s.name from salesman as s, customer as c where s.salesman_id = c.salesman_id;
